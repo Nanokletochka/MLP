@@ -11,7 +11,7 @@ class MNIST(data.Dataset):
 
     def __init__(self, is_train=True):
         # Путь до обучающего и тестового набора данных
-        self.path_to_data = os.path.join("MNIST", "dataset")
+        self.path_to_data = os.path.join("../MNIST", "dataset")
 
         # Определяем целевую папку
         self.target_folder = "train" if is_train else "test"
@@ -86,3 +86,4 @@ class MNIST(data.Dataset):
         img_vector = img_array.flatten()
 
         return img_vector
+
